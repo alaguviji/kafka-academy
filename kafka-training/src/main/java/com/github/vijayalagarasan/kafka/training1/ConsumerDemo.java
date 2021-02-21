@@ -23,6 +23,7 @@ public class ConsumerDemo {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,"GROUP.ECOM.C3.PRD");
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"latest");
 
+        /** adding comments to handle exceptions better **/
 
         //creating consumer
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
